@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 6%;
+    background: #ffffff;
+    border-top: 4px solid #16a34a;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-logo span {
+    color: #16a34a;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links a {
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.navbar-links a:hover {
+    background: #f0fdf4;
+}
+
+/* Last link (Sign Up / Dashboard) looks like a button */
+.navbar-links a:last-child {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.navbar-links a:last-child:hover {
+    background: #15803d;
+}
+
+@media (max-width: 500px) {
+    .navbar-links a {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+}

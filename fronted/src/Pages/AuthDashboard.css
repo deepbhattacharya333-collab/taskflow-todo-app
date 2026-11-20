@@ -1,0 +1,318 @@
+/* ---------- Login and Signup ---------- */
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--accent);
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.auth-card h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.auth-card > p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.auth-card label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.auth-card input {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.auth-card input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.form-message {
+    font-size: 14px;
+    color: var(--danger);
+    margin-top: 6px;
+}
+
+.form-message.success {
+    color: var(--success);
+}
+
+.auth-card button {
+    margin-top: 12px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.auth-card button:hover {
+    background: var(--accent-dark);
+}
+
+.auth-card button:disabled {
+    background: #fdba74;
+    cursor: not-allowed;
+}
+
+.auth-card a {
+    color: var(--accent-dark);
+    font-weight: bold;
+}
+
+/* ---------- Dashboard ---------- */
+
+.dashboard-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 26px;
+}
+
+.dashboard-header p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.dashboard-header button {
+    padding: 8px 16px;
+    border: 1px solid var(--danger);
+    border-radius: 6px;
+    background: #ffffff;
+    color: var(--danger);
+}
+
+.dashboard-header button:hover {
+    background: var(--danger);
+    color: #ffffff;
+}
+
+/* Total / Completed / Remaining boxes */
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.dashboard-summary div {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+}
+
+.dashboard-summary h3 {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: normal;
+}
+
+.dashboard-summary p {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--accent-dark);
+}
+
+/* Progress bar */
+
+.progress-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+/* Task section */
+
+.dashboard-tasks {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dashboard-tasks h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.dashboard-tasks form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.dashboard-tasks form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.dashboard-tasks form input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.dashboard-tasks form button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dashboard-tasks form button:hover {
+    background: var(--accent-dark);
+}
+
+.dashboard-tasks form button:disabled {
+    background: #fdba74;
+    cursor: not-allowed;
+}
+
+.dashboard-message {
+    color: var(--danger);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Filter buttons (All / Pending / Done) */
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.filter-buttons button {
+    padding: 5px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: #ffffff;
+    font-size: 13px;
+}
+
+.filter-buttons button.active {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: #ffffff;
+}
+
+/* Task list */
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1ebe2;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.task-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.task-item button {
+    padding: 5px 12px;
+    border: 1px solid var(--danger);
+    border-radius: 6px;
+    background: #ffffff;
+    color: var(--danger);
+    font-size: 13px;
+}
+
+.task-item button:hover {
+    background: var(--danger);
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .dashboard-tasks form {
+        flex-direction: column;
+    }
+}
