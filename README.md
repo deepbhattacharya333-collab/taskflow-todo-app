@@ -25,7 +25,7 @@ TaskFlow is a full-stack todo application for creating an account, signing in, a
 │   ├── routes/
 │   ├── server.js
 │   └── package.json
-└── fronted/
+└── frontend/
     ├── src/
     ├── public/
     └── package.json
@@ -53,7 +53,7 @@ TaskFlow is a full-stack todo application for creating an account, signing in, a
 4. In a second terminal, install dependencies and start the frontend:
 
    ```bash
-   cd fronted
+   cd frontend
    npm install
    npm run dev
    ```
@@ -87,10 +87,10 @@ Run scripts from their respective package directory.
 | Directory | Command | Purpose |
 | --- | --- | --- |
 | `backend` | `npm run dev` | Start the API with Node watch mode |
-| `fronted` | `npm run dev` | Start the Vite development server |
-| `fronted` | `npm run build` | Create a production frontend build |
-| `fronted` | `npm run lint` | Run Oxlint |
-| `fronted` | `npm run preview` | Preview the production build |
+| `frontend` | `npm run dev` | Start the Vite development server |
+| `frontend` | `npm run build` | Create a production frontend build |
+| `frontend` | `npm run lint` | Run Oxlint |
+| `frontend` | `npm run preview` | Preview the production build |
 
 ## Production Note
 
